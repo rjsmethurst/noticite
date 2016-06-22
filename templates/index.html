@@ -30,6 +30,11 @@
         <div class="jumbotron">
             <h1>#noticite</h1>
             <p class="lead"></p>
+            <p>For your paper {{paper}} you have {{num}} citations:</p>
+              <p>{% for row in citations and for entry in text %}
+                   <p>{{ row }}</p>
+                   <p>{{ entry }}</p>
+                  {% endfor %}</p>
             <p><a class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up</a>
             </p>
         </div>
